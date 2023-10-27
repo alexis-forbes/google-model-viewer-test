@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Model Viewer - Test</title>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+    <style>
+      model-viewer {
+        width: 1200px;
+        height: 1080px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      id="helmet"
+      alt="Buster Drone"
+      src="./assets/buster_drone/scene.gltf"
+      ar
+      ios-src="./assets/Buster_Drone.usdz"
+      shadow-intensity="1"
+      camera-controls
+      auto-rotate
+      touch-action="pan-y"
+    >
+    </model-viewer>
+  </body>
+</html>
